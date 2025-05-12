@@ -1204,8 +1204,8 @@ section,
 
 .menu .menu-content a {
   color: var(--heading-color);
-  background: var(--background-color);
-  padding-right: 10px;
+  background: #0e2d19;
+  padding-right: 5px;
   position: relative;
   z-index: 3;
   font-weight: 700;
@@ -1216,12 +1216,19 @@ section,
   color: var(--accent-color);
 }
 
+@media (min-width: 992px) {
+  .col-lg-6 {
+      width: 100%;
+  }
+}
 .menu .menu-content span {
-  background: var(--background-color);
+  background: #0e2d19;
   color: var(--accent-color);
   position: relative;
   z-index: 3;
-  padding: 0 10px;
+  padding: 0 5px;
+  text-align: end;
+  white-space: nowrap;
   font-weight: 600;
 }
 
