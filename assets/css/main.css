@@ -32,7 +32,7 @@
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
   --nav-hover-color: #cda45e; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #29261f; /* Used as the background color for mobile navigation menu */
+  --nav-mobile-background-color: #01220d; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #29261f; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #cda45e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
@@ -974,6 +974,7 @@ section,
   margin: 0;
   font-size: 48px;
   font-weight: 700;
+  text-align: center;
 }
 
 .hero h2 span {
@@ -1210,17 +1211,14 @@ section,
   z-index: 3;
   font-weight: 700;
   transition: 0.3s;
+  pointer-events: none;
 }
 
 .menu .menu-content a:hover {
   color: var(--accent-color);
 }
 
-@media (min-width: 992px) {
-  .col-lg-6 {
-      width: 100%;
-  }
-}
+
 .menu .menu-content span {
   background: #0e2d19;
   color: var(--accent-color);
